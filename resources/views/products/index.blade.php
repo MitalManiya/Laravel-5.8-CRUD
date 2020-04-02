@@ -37,7 +37,9 @@
 
                         <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
 
+{{--                        //It's create a hidden field and store token in this and name "_token"--}}
                         @csrf
+{{--                        //It's create a hidden field and store value "DELETE" and name "_method"--}}
                         @method('DELETE')
 
                         <button type="submit" class="btn btn-danger">Delete</button>
@@ -47,6 +49,7 @@
         @endforeach
     </table>
 
+{{--    Display Pagination --}}
     {!! $products->links() !!}
 
 @endsection
