@@ -50,6 +50,7 @@
     </table>
 
 {{--    Display Pagination --}}
+{{--  The links method will render the links to the rest of the pages in the result set. Each of these links will already contain the proper page query string variable   --}}
     {!! $products->links() !!}
 
 @endsection

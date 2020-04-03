@@ -8,8 +8,9 @@
 
 <div class="container">
 
+{{--   The @section directive, as the name implies, defines a section of content, while the @yield directive is used to display the contents of a given section.   --}}
 {{--    Here @yield('content') A line etla mate lakhi che ke yield ek var banavyu and tenu name content che have jya jya @section('content') thi @endsection sudhi no je code hoi te ahi yield('content') na lidhe thi display thase means main a line thi page display thase --}}
-    @yield('content')
+    @yield('content');
 </div>
 
 </body>

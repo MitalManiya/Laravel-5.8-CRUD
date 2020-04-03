@@ -16,3 +16,10 @@ Route::get('/', function () {
 });
 
 Route::resource('products','ProductController');
+
+Route::get('/agemiddile', function () {
+    return view('welcome');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
